@@ -10,9 +10,9 @@ export function Cartesian(r: number, phi: number, theta: number) {
    const r=Length;
    const vertices = [
   Cartesian(0,0,1),//A
-  Cartesian(Math.cos(-1/3), 0,0), // B
-  Cartesian(0, -Math.cos(-1/3),0), // C
-  Cartesian(0,0,Math.cos(-1/3)), // D
+  Cartesian(Math.arccos(-1/3), 0,0), // B
+  Cartesian(0, -Math.arccos(-1/3),0), // C
+  Cartesian(0,0,Math.arccos(-1/3)), // D
    ]
    for (let i = 0; i < vertices.length; ++i) {
   vertices[i] = [vertices[i][0] * r, vertices[i][1] * r, vertices[i][2] * r]
