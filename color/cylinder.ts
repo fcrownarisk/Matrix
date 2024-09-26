@@ -13,26 +13,29 @@ void function Cylinder(X:number,Y:number,Z:number){
     return [CylinderXY,CylinderYZ,CylinderZX,CylinderXYZ,X,Y,Z]
 }
 void function CylinderXY(){
-    const element1 =
-        [[0][1][0][1],
-        [1][0][1][0],
-        [0][0][0][1],
-        [0][0][0][0]]
-    const element2 =
-        [[0][1][0][1],
-        [0][0][1][0],
-        [0][1][0][1],
-        [0][0][0][0]]
-    const element3 =
-        [[0][1][0][1],
-        [0][0][1][0],
-        [0][0][0][1],
-        [0][0][1][0]]
-    const element4 =
-        [[0][1][0][1],
-        [0][0][1][0],
-        [0][0][0][1],
-        [1][0][0][0]]
+  const element1=
+           [[1][0][0][0],
+            [0][1][0][0],
+            [0][0][1][0],
+            [0][0][0][1]]
+
+    const element2=
+           [[0][1][0][0],
+            [0][0][1][0],
+            [0][0][0][1],
+            [1][0][0][0]]
+
+    const element3=
+           [[0][0][0][1],
+            [1][0][0][0],
+            [0][1][0][0],
+            [0][0][1][0]]
+
+   const  element4 =
+           [[0][0][1][0],
+            [0][0][0][1],
+            [1][0][0][0],
+            [0][1][0][0]]
     return [element1,element2,element3,element4]
 }
 void function CylinderYZ(){
